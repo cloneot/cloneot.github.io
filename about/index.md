@@ -2,17 +2,17 @@
 layout: page
 type: about
 ---
+<br>
+선린인터넷고등학교 소프트웨어과<br>
+알고리즘 연구반 SHARC 4기<br>
 
-선린인터넷고등학교 소프트웨어과
-알고리즘 연구반 SHARC 4기
 
-
-관심 분야: 알고리즘(Problem Solving)
-[Baekjoon](https://www.acmicpc.net/user/clone_of_teacher) [codeforces](https://codeforces.com/profile/junseo) 
+관심 분야: 알고리즘(Problem Solving)<br>  
+[Baekjoon](https://www.acmicpc.net/user/clone_of_teacher) [codeforces](https://codeforces.com/profile/junseo)
 
 사용 언어: C, C++
 
-
+<hr>
 
 #### 2019
 
