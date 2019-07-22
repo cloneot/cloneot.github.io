@@ -3,8 +3,6 @@ layout: page
 type: about
 ---
 
-## <center>about</center>
-
 선린인터넷고등학교 소프트웨어과
 알고리즘 연구반 SHARC 4기
 
