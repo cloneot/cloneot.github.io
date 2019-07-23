@@ -25,10 +25,6 @@ tags:
 
 ![Desktop Sidebar Preview](http://iissnan.com/nexus/next/desktop-sidebar-toc.png)
 
-* Mobile
-
-![Mobile Preview](http://iissnan.com/nexus/next/mobile.png)
-
 
 ## Installation
 
