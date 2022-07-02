@@ -2,7 +2,7 @@
 title: "UCPC 2022 예선 후기"
 date: 2022-07-03 02:00:00
 categories:
-- Review
+- review
 tags:
 - ucpc
 ---
