@@ -11,14 +11,6 @@ tags:
 
 # UCPC 2022 예선 후기
 
-<style>
-    .ac {
-        color:#009874;
-    }
-    .wa {
-        color:#dd4124;
-    }
-</style>
 
 ### 경과
 
