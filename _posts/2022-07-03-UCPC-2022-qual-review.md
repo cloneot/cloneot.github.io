@@ -118,4 +118,4 @@ D에서 시간을 아꼈으면 I까지 노려볼 수 있지 않았을까 싶다.
 
 
 
-![image-20220702225021574](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220702225021574.png)
+![ucpc 2022 예선 스코어보드](..\img\ucpc-2022-qual-scoreboard)
