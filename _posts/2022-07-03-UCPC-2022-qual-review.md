@@ -11,11 +11,6 @@ tags:
 
 
 
-
-### 경과
-
-
-
 [hibye1217](https://solved.ac/profile/hibye1217), [tlsdydaud1](https://solved.ac/profile/tlsdydaud1)과 팀 OReO로 UCPC에 나갔다. 
 
 학교 도서관 스터디룸에 모여서 진행했다. TV에 스코어보드를 띄우는 건 실패했지만, C번 풀이를 공유할 때 화이트보드가 도움이 됐다. 
@@ -26,6 +21,8 @@ tags:
 
 ---
 
+
+### 경과
 
 
 hibye1217이 A를 바로 풀었다. 그 후 다들 무엇을 풀지 고민하는 시간이 조금 있었다. 
