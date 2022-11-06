@@ -1,5 +1,6 @@
 ---
 title: "UCPC 2022 예선 후기"
+mathjax: true
 date: 2022-07-03 02:00:00
 categories:
 - review
