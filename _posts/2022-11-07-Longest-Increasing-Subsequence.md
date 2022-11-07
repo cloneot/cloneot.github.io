@@ -1,7 +1,6 @@
 ---
 title:  "Longest Increasing Subsequence"
 layout: post
-description: "다른 사람에게 설명하기가 쉽지 않아서 한 번 정리해본다.  $$O(N^2)$$, $$O(N \log N)$$, 역추적, 2D LIS를 다룬다."
 ---
 
 # Longest Increasing Subsequence
@@ -22,7 +21,7 @@ $$D_i$$ := $$A_i$$를 마지막 원소로 가지는 증가하는 부분수열의
 
 편의상 $$A_0 = -\infin$$로 두면 점화식은 다음과 같다. 
 
-$$D_i = \begin{cases} 0 & \text{ if } i=0 \\ \displaystyle \max_{0 \le j < i,\  A_j < A_i} (D_j + 1) & \text{ if } i \ge 1 \end{cases}$$
+$$\textstyle D_i = \begin{cases} 0 & \text{ if } i=0 \\ \displaystyle \max_{0 \le j < i,\  A_j < A_i} (D_j + 1) & \text{ if } i \ge 1 \end{cases}$$
 
 답은 $$\displaystyle \max_{1 \le i \le N} D_i$$이다. 
 
@@ -37,9 +36,9 @@ $$D_i = \begin{cases} 0 & \text{ if } i=0 \\ \displaystyle \max_{0 \le j < i,\  
 
 $$T_{i, x}$$ :=  $$A_{1..i}$$에 존재하는, 마지막 원소의 값이 $$x$$인 증가하는 부분수열의 최대 길이
 
-$$\displaystyle D_i = \max_{1 \le x < A_i} (T_{i-1, x} + 1)$$
+$$\textstyle D_i = \max_{1 \le x < A_i} (T_{i-1, x} + 1)$$
 
-$$T_{i, x} = \begin{cases} T_{i-1, x} & \text{ if } x \ne A_i \\ \max(T_{i-1, x},\  D_i) & \text{ if } x = A_i\end{cases}$$
+$$\textstyle T_{i, x} = \begin{cases} T_{i-1, x} & \text{ if } x \ne A_i \\ \max(T_{i-1, x},\  D_i) & \text{ if } x = A_i\end{cases}$$
 
 
 
@@ -115,7 +114,7 @@ int main() {
 
 $$D_{i, j}$$ := $$A_{1..i}$$에서 길이가 $$j$$인 증가하는 부분수열 중, 마지막 원소의 최솟값
 
-$$D_{i, j} = \begin{cases} D_{i-1, j} & \text{ if } D_{i-1, j-1} \ge A_i \\ \min(D_{i-1, j},\  A_i) & \text{ if } D_{i-1, j-1} < A_i\end{cases}$$
+$$\textstyle D_{i, j} = \begin{cases} D_{i-1, j} & \text{ if } D_{i-1, j-1} \ge A_i \\ \min(D_{i-1, j},\  A_i) & \text{ if } D_{i-1, j-1} < A_i\end{cases}$$
 
 
 
