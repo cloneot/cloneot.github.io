@@ -17,7 +17,7 @@ layout: post
 ### $O(N^2)$ 알고리즘
 $D_i$ := $A_i$를 마지막 원소로 가지는 증가하는 부분수열의 최대 길이
 
-편의상 $A_0 = -\infin$로 두면 점화식은 다음과 같다. 
+편의상 $A_0 = -\infty$로 두면 점화식은 다음과 같다. 
 
 $D_i = \begin{cases} 0 & \text{ if } i=0 \\ \displaystyle \max_{0 \le j < i,\  A_j < A_i} (D_j + 1) & \text{ if } i \ge 1 \end{cases}$
 
