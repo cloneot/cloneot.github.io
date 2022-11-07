@@ -7,6 +7,9 @@ excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 mathjax: true
 
+# markdown: kramdown
+# usemathjax: true
+
 # Layout
 
 show_excerpts: true        # show article excerpts on the home page
