@@ -1,7 +1,7 @@
 ---
 title:  "Longest Increasing Subsequence"
 layout: post
-description: 다른 사람에게 설명하기가 쉽지 않아서 한 번 정리해본다.  $$O(N^2)$$, $$O(N \log N)$$, 역추적, 2D LIS를 다룬다. 
+description: "다른 사람에게 설명하기가 쉽지 않아서 한 번 정리해본다.  $$O(N^2)$$, $$O(N \log N)$$, 역추적, 2D LIS를 다룬다."
 ---
 
 # Longest Increasing Subsequence
