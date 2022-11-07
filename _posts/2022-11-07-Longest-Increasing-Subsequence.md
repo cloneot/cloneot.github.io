@@ -36,7 +36,7 @@ $T_{i, x}$ :=  $A_{1..i}$에 존재하는, 마지막 원소의 값이 $x$인 증
 
 $\displaystyle D_i = \max_{1 \le x < A_i} (T_{i-1, x} + 1)$
 
-$\displaystyle T_{i, x} = \begin{cases} T_{i-1, x} & \text{ if } x \ne A_i \\ \max(T_{i-1, x},\  D_i) & \text{ if } x = A_i\end{cases}$
+$\displaystyle T_{i, x} = \begin{cases} T_{i-1, x} & \text{ if } x \ne A_i \\\ \max(T_{i-1, x},\  D_i) & \text{ if } x = A_i\end{cases}$
 
 
 
@@ -157,7 +157,7 @@ int main() {
 
 세그먼트 트리의 경우에는 $\max$를 반환하던 쿼리를 $(\max, \text{max\_index})$를 반환하도록 수정하면 된다. 
 
-두 번째 DP식의 경우에는 $P_i$ := 증가하는 부분수열에서 $A_i$ 직전 원소의 인덱스, $I_j$ := 현재 시점에 $D_j$에 저장되어 있는 값의 인덱스로 두자. 그러면 $I_{\text{last-idx}}$가 LIS의 마지막 인덱스가 되고, $P$를 보면서 역추적을 하면 된다. 
+두 번째 DP식의 경우에는 $P_i$ := 증가하는 부분수열에서 $A_i$ 직전 원소의 인덱스, $I_j$ := 현재 시점에 $D_j$에 저장되어 있는 값의 인덱스로 두자. 그러면 $I_{\text{last\_idx}}$가 LIS의 마지막 인덱스가 되고, $P$를 보면서 역추적을 하면 된다. 
 
 
 
