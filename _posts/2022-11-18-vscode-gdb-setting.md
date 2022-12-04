@@ -1,6 +1,6 @@
 ---
 title: "vscode 빌드, 디버깅 세팅"
-layout: "post"
+layout: post
 ---
 
 ## vscode 빌드, 디버깅 세팅

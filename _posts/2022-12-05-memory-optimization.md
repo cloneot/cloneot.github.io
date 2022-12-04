@@ -1,6 +1,6 @@
 ---
 title: "메모리 최적화와 실행 시간"
-layout: "post"
+layout: post
 ---
 
 
