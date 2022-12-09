@@ -158,19 +158,18 @@ $T_1$과 $T_2$가 **equivalent**하다: $v_{T_1}(u, v)=v_{T_2}(u, v)$ for all $1
 
 global minimum weight 간선을 기준으로 트리가 쪼개진다고 볼 수 있다. 이 구조가 재귀적으로 반복된다. 
 
-거꾸로 리프부터 생각해보면 [크루스칼의 공](https://www.acmicpc.net/problem/1396)에서 쓰는 MST랑 비슷하다. 가중치가 같은 간선에 대해서만 한번에 합쳐지도록 해주면 정규화할 수 있을 것 같다. 이렇게 구성한 트리에서 정점은 (원래 트리에서의 정점셋, 간선의 가중치) 정보를 저장할 것이다. 
+거꾸로 리프부터 생각해보면 [크루스칼의 공](https://www.acmicpc.net/problem/1396)에서 쓰는 MST랑 비슷하다. 가중치가 같은 간선에 대해서만 한번에 합쳐지도록 해주면 정규화할 수 있을 것 같다. 
 
 
 
-$w_1 = LCA_{T_1}(u, v)$, $w_2 = LCA_{T_2}(u, v)$라고 하면,
+$weight_u \centercolon= $ $u$가 생성될 때의 간선의 가중치
 
-equivalent하지 않은 $T_1$, $T_2$에 대해서는 $w_1 \neq w_2$인 $(u, v)$쌍이 존재하여 정규화 결과도 다르다. 
-
-equivalent한 $T_1, T_2$에 대해서는 $Weight_{w_1} = Weight_{w_2}$이고 $Weight_{w} \neq Weight_{parent_w}$이므로 $w_1=w_2$이다. 
+$leaf_u \centercolon=$ $u$가 나타내고 있는 정점셋의 정점 번호 중 minimum
 
 
 
-그렇게 생성한 $T$를 $(size_1, weight_1, parent_1, -1, size_2, weight_2, parent_2, -1, \cdots, -1, size_v, weight_v, parent_v)$ 형식으로 인코딩한다. 크기 $O(N)$짜리 배열이 만들어진다. 
+그렇게 생성한 $T$의 $weight_u \neq weight_{parent_u}$인 모든 정점에 대해서 $(weight_u, leaf_u, weight_{parent_u}, leaf_{parent_u})$ 튜플을 만든다. $weight_u = weight_{parent_u}$인 경우에는 더미 정점이므로 건너뛴다. 
+이 튜플들을 정렬하면 인코딩이 끝난다. 입력으로 주어진 트리를 크기 $O(N)$짜리 배열로 정규화했다. 
 
 $N \cdot d$가 작으므로 이 벡터를 통째로 맵에 넣어서 체크해도 된다. 
 
