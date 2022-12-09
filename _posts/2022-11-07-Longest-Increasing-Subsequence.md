@@ -36,7 +36,7 @@ $T_{i, x}$ :=  $A_{1..i}$에 존재하는, 마지막 원소의 값이 $x$인 증
 
 $\displaystyle D_i = \max_{1 \le x < A_i} (T_{i-1, x} + 1)$
 
-$\displaystyle T_{i, x} = \begin{cases} T_{i-1, x} & \text{ if } x \ne A_i \\\ \max(T_{i-1, x},\  D_i) & \text{ if } x = A_i\end{cases}$
+$\displaystyle T_{i, x} = \begin{cases} T_{i-1, x} & \text{ if } x \ne A_i \\ \max(T_{i-1, x},\  D_i) & \text{ if } x = A_i\end{cases}$
 
 
 
@@ -149,7 +149,7 @@ int main() {
 
 
 
-#### 역추적
+### 역추적
 
 어떤 원소를 마지막 원소로 가지는 증가하는 부분수열에 대하여, 그 전 원소(마지막에서 두 번째 원소)가 $A$에서 몇 번째 인덱스였는지를 저장하면 된다. 맨 뒤에서부터 처음까지 재귀적으로 구해나가면 된다. 
 
@@ -161,9 +161,11 @@ int main() {
 
 
 
-#### 2D LIS
 
-이 문제[] 어쩌고 저쩌고...
+
+### 2D LIS
+
+[이 문제](https://www.acmicpc.net/problem/15977) 어쩌고 저쩌고...
 
 2D 세그먼트 트리를 이용하여 $O(N \log^2 N)$ 시간에 문제를 해결할 수 있다. 
 

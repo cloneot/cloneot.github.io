@@ -46,3 +46,9 @@ group: { "kind": "build", "isDefault": true }
 
 
 
+## C++20
+
+contains 등을 사용하기 위해서는 -std=c++20 옵션이 필요하다. 
+
+std 디폴트 옵션은 g++ 버전에 따라 고정되어 있는듯 하다. code runner setting에서 -std=c++20 옵션을 추가하는 게 가장 깔끔한 방법 같다. 
+
