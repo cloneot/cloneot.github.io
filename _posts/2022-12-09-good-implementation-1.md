@@ -36,7 +36,7 @@ vector<pii> query(vector<pii>& P) {
 
 int main() {
 	int M, N;	cin >> M >> N;
-	vector<pii> ans{{1, 1}, {M, N}};
+	vector<pii> ans{ {1, 1}, {M, N} };
 	rep(q, 1, 10)	ans = query(ans);
 	cout << "! " << encode(ans, true);
 	return 0;
