@@ -77,7 +77,11 @@ $D_{i,\text{kind},0}$과 $D_{i,\text{kind},1}$는 좀 더 신경을 써줘야 �
 
 [Letter Stamper (Large)](https://www.acmicpc.net/problem/12544)는 $|S| \le 7000$인데 상수가 작지는 않아서 추가적인 처리가 필요하다. 토글링을 하고 $\text{size} \le \frac{|S|}{2}$로 둬서 메모리와 시간을 줄이면 맞을 수 있다. (+ pragma를 박으면 2배 빨라져서 토글링만 해도 통과는 된다)
 
-pop을 lazy하게 하지 않고, $\text{size}$번까지 pop하는 걸 전부 전이하면 $O(|S|^3)$로 풀린다. 아마 이게 의도된 small 풀이 같다. 
+pop을 lazy하게 하지 않고, $\text{size}$번까지 pop하는 걸 전부 전이하면 $O(|S|^3)$로 풀린다. 이건 약간 억지 $O(|S|^3)$이다. 
+
+$D_{c, l, r} \centercolon =$ 현재 stack의 top에 $c$가 저장되어 있고, $[l, r]$ 구간을 전부 처리한 후에 같은 $c$가 stack의 top에 있게 할 때, 최소 연산 횟수
+
+
 
 
 
