@@ -56,3 +56,5 @@ minima:
 # show_excerpts: false
 
 # markdown: kramdown
+
+permalink: /:categories/:title
