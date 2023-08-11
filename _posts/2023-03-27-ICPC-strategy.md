@@ -1,4 +1,11 @@
-
+---
+title: "ICPC 전략"
+layout: post
+categories: problem-solving
+tags:
+- problem-solving
+- icpc
+---
 ## 지문
 - 쉬운 문제부터 읽을수록 좋다
 - 빨리 읽을수록 좋다

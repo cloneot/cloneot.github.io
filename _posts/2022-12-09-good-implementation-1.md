@@ -1,6 +1,10 @@
 ---
-title: "잘 짠 코드 모음"
+title: "깔끔한 정답 코드 모음 1"
 layout: post
+categories: problem-solving
+tags:
+- problem-solving
+- boj
 ---
 
 
@@ -64,7 +68,7 @@ set<pll> st;	// (diff, dp)
 
 int main() {
 	fastio;
-	
+
 	cin >> N;
 	st.emplace(-1e15, 0);
 	st.emplace(1e15, 2e15);
