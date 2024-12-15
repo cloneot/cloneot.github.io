@@ -55,6 +55,6 @@ minima:
 #
 # show_excerpts: false
 
-# markdown: kramdown
+markdown: CommonMark
 
 permalink: /:categories/:title
