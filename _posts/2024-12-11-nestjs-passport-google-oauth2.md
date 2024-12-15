@@ -16,16 +16,12 @@ tags:
 - passport, passport-oauth2, passport-google-oauth20, nestjs/passport 코드 살펴보기
 - 키워드: NestJS, TypeScript, Passport, Session, OAuth 2.0, OIDC
 
-
-
 ## Non-Goal
 
 - Youtube Data API 사용법 설명하기
 - JWT 기반 인증
 - passport 기본 동작 자세히 설명하기
 - 결정사항들에 대한 근거 자세히 설명하기
-
-
 
 ## Background
 
@@ -44,8 +40,6 @@ tags:
   - 보안이 중요하다 (Youtube 권한 일부를 사용하므로)
   - Passport is most popular node.js authentication library - https://docs.nestjs.com/recipes/passport
   - 토큰이 아닌 세션 기반 인증을 사용하고 싶다
-
-
 
 ## Overview
 
@@ -68,8 +62,6 @@ tags:
        - 권한 요구 목록인 scope에 'openid'를 포함할 경우, id token도 발급됨
        - 처음 로그인한 유저일 경우, 회원가입 절차를 진행하거나 자동으로 회원가입
   3. 유저가 Youtube API가 필요한 요청을 할 때마다, 해당 유저의 access token을 이용해 Youtube API 호출
-
-
 
 ## Passport - Express
 
@@ -160,8 +152,6 @@ tags:
   - lib/strategy.js의 `Strategy.prototype.userProfile = function(accessToken, done) { ... }`
 
     - accessToken을 이용해 id token 정보 얻어옴
-
-
 
 ## Passport - NestJS
 
@@ -377,8 +367,6 @@ export class GoogleAuthGuard extends AuthGuard('google') {
     bootstrap()
     ```
 
-
-
 ## Troubleshooting
 
 - google oauth20 strategy이 무엇을 구현한 것인가?
@@ -422,8 +410,6 @@ export class GoogleAuthGuard extends AuthGuard('google') {
 - 테스트를 어떻게 진행해야 할지 잘 모르겠다
   - 자동 로그인이 잘 되는지, 특정 시간이 지나고 풀리는지, 풀린 후 재로그인할 때 권한 요청 창이 다시 안 뜨는지
   - postman을 사용할 때의 e2e 테스트 같은 걸 하고 싶은데, 유저 → SPA → API 서버 순으로 접근해야 하고, 로그인 세션 정보는 SPA 단에 붙어서 간단하게는 불가능하다
-
-
 
 ## References
 
