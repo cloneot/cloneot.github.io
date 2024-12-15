@@ -55,6 +55,12 @@ minima:
 #
 # show_excerpts: false
 
-# markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  auto_links: true
 
 permalink: /:categories/:title
