@@ -38,7 +38,7 @@ tags:
     - id token: 사용자 식별 정보가 담긴 JSON Web Token (만료시점, 고유한 유저 식별자, 이메일, ... )
 - [Passport](https://www.passportjs.org/)를 사용하여 OAuth 2.0, OIDC 절차를 수행하고 싶다
   - 보안이 중요하다 (Youtube 권한 일부를 사용하므로)
-  - Passport is most popular node.js authentication library - https://docs.nestjs.com/recipes/passport
+  - Passport is most popular node.js authentication library - <https://docs.nestjs.com/recipes/passport>
   - 토큰이 아닌 세션 기반 인증을 사용하고 싶다
 
 ## Overview
@@ -67,9 +67,9 @@ tags:
 
 껍데기 자체는 간단하여 코드를 직접 보는 게 이해하기 수월하다. 
 
-- https://github.com/jaredhanson/passport
-- https://github.com/jaredhanson/passport-oauth2
-- https://github.com/jaredhanson/passport-google-oauth2
+- <https://github.com/jaredhanson/passport>
+- <https://github.com/jaredhanson/passport-oauth2>
+- <https://github.com/jaredhanson/passport-google-oauth2>
 
 
 
@@ -155,7 +155,7 @@ tags:
 
 ## Passport - NestJS
 
-- https://github.com/nestjs/passport
+- <https://github.com/nestjs/passport>
 
 NestJS에서는 구현해야 하는 위치가 흩뿌려져 있어, Express보다는 조금 복잡하다. 
 
@@ -328,7 +328,7 @@ export class GoogleAuthGuard extends AuthGuard('google') {
 
 - **await** req.logOut를 쓰고 싶으면 promisify 미들웨어를 추가해야 한다 (req.logout은 식별자만 다른 동일 함수)
 
-  - req.logIn / req.logOut 구현체: https://github.com/jaredhanson/passport/blob/master/lib/http/request.js
+  - req.logIn / req.logOut 구현체: <https://github.com/jaredhanson/passport/blob/master/lib/http/request.js>
 
   - 이들은 session manager의 logIn/logOut을 호출 (session의 키 'passport'는 옵션으로 변경가능)
 
@@ -385,7 +385,7 @@ export class GoogleAuthGuard extends AuthGuard('google') {
     - 이때 이미 해당 프로퍼티가 있으면 건너뜀
     - 솔루션: req.logIn, req.logOut 프로퍼티에 promisify()하여 미리 넣어둠
 - fetch API redirect CORS 이슈
-  - https://stackoverflow.com/questions/21451172/how-to-integrate-oauth-with-a-single-page-application
+  - <https://stackoverflow.com/questions/21451172/how-to-integrate-oauth-with-a-single-page-application>
   - SPA에서 fetch로 /auth/login 요청 보내면, API 측의 guard가 알아서 auth url로 redirect함
   - 근데 이게 url이 바뀌는 판정이 아니라, 새로운 url로 SPA에서 fetch가 날아가는 판정인듯 (추측)
   - 구글 로그인 페이지는 우리에게 CORS 허용을 안해줬으므로 망함 (프론트, 백 둘 다 마찬가지)
@@ -414,11 +414,11 @@ export class GoogleAuthGuard extends AuthGuard('google') {
 ## References
 
 - OAuth 2.0
-  - OAuth 2.0 동작 방식의 이해: https://blog.naver.com/mds_datasecurity/222182943542
-  - Using OAuth 2.0 to Access Google APIs: https://developers.google.com/identity/protocols/oauth2
+  - OAuth 2.0 동작 방식의 이해: <https://blog.naver.com/mds_datasecurity/222182943542>
+  - Using OAuth 2.0 to Access Google APIs: <https://developers.google.com/identity/protocols/oauth2>
 - Passport
-  - Nest.js에서 멀티 프로세스 용 세션 로그인 구현하기: https://blog.naver.com/biud436/222841223210
-  - Passport (authentication): https://docs.nestjs.com/recipes/passport
-  - Passport strategy for Google OAuth 2.0: https://www.passportjs.org/packages/passport-google-oauth2/
-  - Understanding passport serialize deserialize: https://stackoverflow.com/questions/27637609/understanding-passport-serialize-deserialize
+  - Nest.js에서 멀티 프로세스 용 세션 로그인 구현하기: <https://blog.naver.com/biud436/222841223210>
+  - Passport (authentication): <https://docs.nestjs.com/recipes/passport>
+  - Passport strategy for Google OAuth 2.0: <https://www.passportjs.org/packages/passport-google-oauth2/>
+  - Understanding passport serialize deserialize: <https://stackoverflow.com/questions/27637609/understanding-passport-serialize-deserialize>
   - [Node.js] passport Google OAuth 2.0 로그인 사용하기: [https://millo-l.github.io/Nodejs-passport-Google-OAuth-2-로그인-사용하기/](https://millo-l.github.io/Nodejs-passport-Google-OAuth-2-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/)
