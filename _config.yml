@@ -56,5 +56,8 @@ minima:
 # show_excerpts: false
 
 markdown: CommonMark
+commonmark:
+  extensions:
+    - autolink
 
 permalink: /:categories/:title
