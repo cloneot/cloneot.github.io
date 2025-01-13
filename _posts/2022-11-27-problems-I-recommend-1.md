@@ -69,7 +69,7 @@ $\text{ans}_i = h_i$
 
 ---
 
-$i$에서 갈 수 있는 구간이 $[l, r]$라면 $\displaystyle \text{ans}_i = \max_{l \le j \le r}h_j$
+$i$에서 갈 수 있는 구간이 $[l, r]$라면 $\displaystyle \text{ans}\_i = \max_{l \le j \le r}h_j$
 
 ---
 
@@ -120,8 +120,8 @@ $\displaystyle D_i = \max_{1 \le j}{D_{j-1} + \text{value}_{j,i}}$
 
 ---
 
-$\text{value}_{l,i}$와 $\text{value}_{l,i+1}$의 차이는?
-$i+1$번째 숫자가 $x$일 때, distinct한 숫자 개수가 늘어나는 구간은 $l \in [\text{last\_index}_x, i+1]$
+$\text{value}\_{l,i}$와 $\text{value}_{l,i+1}$의 차이는?
+$i+1$번째 숫자가 $x$일 때, distinct한 숫자 개수가 늘어나는 구간은 $l \in [{\text{last}}\_{\text{index}\_x}, i+1]$
 
 - $j$번째 원소를 $D_{j} + \text{value}_{j,j}$로 설정
 - $[l, r]$ 구간에 +1 업데이트
