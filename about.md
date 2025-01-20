@@ -1,18 +1,28 @@
 ---
 layout: page
-title: About
+title: Junseo Kim
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Profile
+- CV: [pdf](https://github.com/cloneot/cloneot/blob/master/CV_without_phone.pdf) (last updated: Jan. 2025)
+- Blog: <https://blog.cloneot.dev>
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+## Work Experience
+- **NAVER Corp.** Software Engineer Intership (2024)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## Education
+- Hanyang University, B.S. in Computer Science (2022-current)
+- Sunrin Internet High School, Department of Software (2019-2022)
+
+## Awards
+- 2023 **ICPC 2023 Asia Seoul Regional Contest** Encouragement Award (13th place)
+- 2022 **ICPC 2022 Asia Seoul Regional Contest** 17th place
+- 2021 **Korea Olympiad in Informatics** Silver award
+- 2020 **Korea Olympiad in Informatics** Silver award
+
+## Problem Solving
+- solved.ac: [junseo](https://solved.ac/profile/junseo)
+- codeforces: [junseo](https://codeforces.com/profile/junseo)
 
 
-[jekyll-organization]: https://github.com/jekyll
