@@ -43,7 +43,7 @@ GET, POST 등을 메소드 토큰이라 부른다. 이는 **의미적으로** �
 | TRACE       | Perform a message loop-back test along the path to the target resource. | [9.3.8](https://httpwg.org/specs/rfc9110.html#TRACE)   |
 | PATCH       | Replace partial current representations of the target resource with request content. | [2](https://httpwg.org/specs/rfc5789.html#patch)       |
 
-출처: https://httpwg.org/specs/rfc9110.html#method.overview
+출처: <https://httpwg.org/specs/rfc9110.html#method.overview>
 
 
 
