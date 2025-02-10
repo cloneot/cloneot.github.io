@@ -55,7 +55,7 @@ tags:
 
 - 구현하고자 하는 OAuth 2.0 프로토콜(authorization code grant)에서 NestJS API 서버가 해야 하는 일은 다음과 같다:
   1. 유저가 구글 로그인할 수 있는 authorization url 생성하기
-     - 1의 auth url에 유저가 접속하여 권한 부여에 동의하고 구글 계정으로 로그인 → 구글 auth server에서 로그인 정보 인증 후, 미리 지정해놓은 NesJS API 서버 측 redirect uri로 authorization code를 쿼리 스트링에 담아 전송
+     - 1의 auth url에 유저가 접속하여 권한 부여에 동의하고 구글 계정으로 로그인 → 구글 auth server에서 로그인 정보 인증 후, 미리 지정해놓은 NestJS API 서버 측 redirect uri로 authorization code를 쿼리 스트링에 담아 전송
   2. redirect uri에 auth code가 오면, 구글 auth server에 auth code를 전송하여 OAuth 2.0과 OIDC에 필요한 토큰 발급받기
      - access token, refresh token을 적절한 위치에 저장하기
      - 구글 계정마다 고유한 값을 가지는, [id token의 sub 필드](https://developers.google.com/identity/openid-connect/openid-connect#an-id-tokens-payload)를 토대로 인증 진행하기
